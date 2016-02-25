@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Month">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <string-array name="Year">
+        <item>2016年</item>
+        <item>2015年</item>
+        <item>2014年</item>
+        <item>2013年</item>
+        <item>2012年</item>
+        <item>2011年</item>
+        <item>2010年</item>
+        <item>2009年</item>
+        <item>2008年</item>
+    </string-array>
+</resources>

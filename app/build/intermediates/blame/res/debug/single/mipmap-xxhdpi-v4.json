@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_launcher.png",
+        "source": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/little_tv.jpg",
+        "source": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/mipmap-xxhdpi/little_tv.jpg"
+    },
+    {
+        "merged": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/anime_info_pic.png",
+        "source": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/mipmap-xxhdpi/anime_info_pic.png"
+    }
+]

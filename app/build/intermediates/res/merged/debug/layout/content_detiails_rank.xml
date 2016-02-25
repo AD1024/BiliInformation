@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.loopcom.ccoderad.biliinformation.detiails_rank"
+    tools:showIn="@layout/activity_detiails_rank">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8sp">
+
+        <TextView
+            android:id="@+id/tvUP_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/info_date_indicator"
+            android:layout_marginTop="8dp"
+            android:text="UP主:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#464040" />
+
+        <TextView
+            android:id="@+id/info_up_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvUP_indicator"
+            android:layout_toEndOf="@+id/tvUP_indicator"
+            android:text="UPNameHere"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/play_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvUP_indicator"
+            android:layout_below="@+id/tvUP_indicator"
+            android:paddingTop="8sp"
+            android:text="播放次数:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/info_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/play_indicator"
+            android:layout_toEndOf="@+id/play_indicator"
+            android:text="N/A"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/fav_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="收藏次数:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp"
+            android:layout_alignBottom="@+id/info_fav"
+            android:layout_alignEnd="@+id/info_up_name" />
+
+        <TextView
+            android:id="@+id/info_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/play_indicator"
+            android:layout_toEndOf="@+id/fav_indicator"
+            android:text="N/A"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tvUP_indicator"
+            android:text="TitleHere"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_type_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/info_up_name"
+            android:layout_marginLeft="10sp"
+            android:layout_toEndOf="@+id/info_up_name"
+            android:text="类型:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/info_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/info_type_indicator"
+            android:layout_toEndOf="@+id/info_type_indicator"
+            android:text="TypeHere"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/comment_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论数:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="13sp"
+            android:layout_alignBottom="@+id/info_comment"
+            android:layout_toEndOf="@+id/info_type_indicator" />
+
+        <TextView
+            android:id="@+id/info_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/info_fav"
+            android:layout_toEndOf="@+id/comment_indicator"
+            android:text="N/A"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/info_date_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/info_title"
+            android:layout_below="@+id/info_title"
+            android:layout_marginTop="10sp"
+            android:text="投稿日期:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/info_up_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvUP_indicator"
+            android:layout_toEndOf="@+id/info_date_indicator"
+            android:text="YYYY-MM-DD"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/info_Content_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/play_indicator"
+            android:layout_below="@+id/play_indicator"
+            android:layout_marginTop="10sp"
+            android:text="视频内容描述:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/info_Content_indicator"
+            android:layout_below="@+id/info_Content_indicator"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/info_Content_indicator"
+                android:layout_toStartOf="@+id/fav_indicator"
+                android:singleLine="false"
+                android:text="DescriptionHere"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

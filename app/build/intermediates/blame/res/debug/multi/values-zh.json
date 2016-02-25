@@ -1,0 +1,121 @@
+[
+    {
+        "outputFile": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/res/merged/debug/values-zh/values-zh.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 43,
+                    "endOffset": 94
+                },
+                "from": {
+                    "file": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/values-zh/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 104,
+                        "endColumn": 43,
+                        "endOffset": 143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 99,
+                    "endColumn": 59,
+                    "endOffset": 154
+                },
+                "from": {
+                    "file": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/values-zh/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 199,
+                        "endColumn": 59,
+                        "endOffset": 254
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 159,
+                    "endColumn": 48,
+                    "endOffset": 203
+                },
+                "from": {
+                    "file": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/values-zh/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 208,
+                    "endColumn": 41,
+                    "endOffset": 245
+                },
+                "from": {
+                    "file": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/values-zh/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 259,
+                        "endColumn": 41,
+                        "endOffset": 296
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 250,
+                    "endColumn": 45,
+                    "endOffset": 291
+                },
+                "from": {
+                    "file": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/values-zh/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 301,
+                        "endColumn": 45,
+                        "endOffset": 342
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 296,
+                    "endColumn": 50,
+                    "endOffset": 342
+                },
+                "from": {
+                    "file": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/values-zh/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 148,
+                        "endColumn": 50,
+                        "endOffset": 194
+                    }
+                }
+            }
+        ]
+    }
+]
