@@ -257,4 +257,12 @@ public class WeekRank extends AppCompatActivity implements WaveSwipeRefreshLayou
             rankTask.cancel(true);
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(rankTask!=null && rankTask.getStatus()== AsyncTask.Status.RUNNING){
+            rankTask.cancel(true);
+        }
+    }
 }

@@ -23,6 +23,7 @@ public class InfoImageLoader {
     private ImageView mImageView;
     private String mURL;
     private LruCache<String,Bitmap> mLruCache;
+    //Init Vars and LRUCache
     public InfoImageLoader(){
         int MaxMem = (int) Runtime.getRuntime().maxMemory();
         MaxMem/=4;

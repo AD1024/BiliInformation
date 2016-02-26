@@ -228,4 +228,12 @@ public class AnimeInfo extends AppCompatActivity implements WaveSwipeRefreshLayo
             loadTask.cancel(true);
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(loadTask!=null && loadTask.getStatus()== AsyncTask.Status.RUNNING){
+            loadTask.cancel(true);
+        }
+    }
 }
