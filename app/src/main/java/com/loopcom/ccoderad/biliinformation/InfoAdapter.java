@@ -1,16 +1,14 @@
 package com.loopcom.ccoderad.biliinformation;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.androidannotations.annotations.EBean;
-import org.androidannotations.annotations.RootContext;
-import org.androidannotations.annotations.ViewById;
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.List;
 
@@ -23,10 +21,10 @@ public class InfoAdapter extends BaseAdapter {
     List<AnimeBean> mList;
     LayoutInflater mInflater;
     String[] wk = new String[]{"星期日","星期一","星期二","星期三","星期四","星期五","星期六"};
-    private InfoImageLoader infoImageLoader;
+   // private InfoImageLoader infoImageLoader;
     public InfoAdapter(Context context,List<AnimeBean> Data) {
         mList = Data;
-        infoImageLoader = new InfoImageLoader();
+       // infoImageLoader = new InfoImageLoader();
         mInflater = LayoutInflater.from(context);
     }
 
@@ -85,14 +83,15 @@ public class InfoAdapter extends BaseAdapter {
 //            vh.spid= (TextView) convertView.findViewById(R.id.info_spid);
             vh.title= (TextView) convertView.findViewById(R.id.tvTitle);
 //            vh.typeid= (TextView) convertView.findViewById(R.id.info_typeid);
-            vh.img = (ImageView) convertView.findViewById(R.id.info_img);
+            vh.img = (SimpleDraweeView) convertView.findViewById(R.id.info_img);
             convertView.setTag(vh);
         }else{
             vh = (ViewHolder)convertView.getTag();
         }
-        vh.img.setImageResource(R.mipmap.anime_info_pic);
-        vh.img.setTag(mList.get(position).IconUrl);
-       infoImageLoader.startLoad(mList.get(position).IconUrl,vh.img);
+//        vh.img.setTag(mList.get(position).IconUrl);
+//       infoImageLoader.startLoad(mList.get(position).IconUrl,vh.img);
+        Uri uri =Uri.parse(mList.get(position).IconUrl);
+        vh.img.setImageURI(uri);
 //        vh.typeid.setText(mList.get(position).typeid);
         vh.weekinfo.setText(getWeekInfo(position));
         vh.title.setText(mList.get(position).Title);
@@ -101,7 +100,7 @@ public class InfoAdapter extends BaseAdapter {
     }
 
     class ViewHolder{
-        ImageView img;
+        SimpleDraweeView img;
         TextView weekinfo;
         TextView title;
         TextView spid;

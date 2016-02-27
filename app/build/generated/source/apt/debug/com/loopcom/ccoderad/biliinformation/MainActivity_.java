@@ -81,17 +81,20 @@ public final class MainActivity_
     @Override
     public void onViewChanged(HasViews hasViews) {
         cd_1 = ((CardView) hasViews.findViewById(id.card_1));
-        if (cd_1 != null) {
-            cd_1 .setOnClickListener(new OnClickListener() {
+        {
+            View view = hasViews.findViewById(id.card_3);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
 
 
-                @Override
-                public void onClick(View view) {
-                    MainActivity_.this.card_1();
+                    @Override
+                    public void onClick(View view) {
+                        MainActivity_.this.card_3();
+                    }
+
                 }
-
+                );
             }
-            );
         }
         {
             View view = hasViews.findViewById(id.card_2);
@@ -107,6 +110,18 @@ public final class MainActivity_
                 }
                 );
             }
+        }
+        if (cd_1 != null) {
+            cd_1 .setOnClickListener(new OnClickListener() {
+
+
+                @Override
+                public void onClick(View view) {
+                    MainActivity_.this.card_1();
+                }
+
+            }
+            );
         }
     }
 

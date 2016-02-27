@@ -1,8 +1,8 @@
 package com.loopcom.ccoderad.biliinformation;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 
 import org.androidannotations.annotations.Click;
@@ -25,5 +25,9 @@ public class MainActivity extends AppCompatActivity {
     @Click
     void card_2(){
         startActivity(new Intent(this,WeekRank.class));
+    }
+    @Click
+    void card_3(){
+        startActivity(new Intent(this,live_list.class));
     }
 }

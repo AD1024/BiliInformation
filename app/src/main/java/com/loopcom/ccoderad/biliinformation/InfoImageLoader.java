@@ -6,9 +6,6 @@ import android.os.AsyncTask;
 import android.util.LruCache;
 import android.widget.ImageView;
 
-import org.androidannotations.annotations.Background;
-import org.androidannotations.annotations.UiThread;
-
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,6 +20,7 @@ public class InfoImageLoader {
     private ImageView mImageView;
     private String mURL;
     private LruCache<String,Bitmap> mLruCache;
+    //Init Vars and LRUCache
     public InfoImageLoader(){
         int MaxMem = (int) Runtime.getRuntime().maxMemory();
         MaxMem/=4;

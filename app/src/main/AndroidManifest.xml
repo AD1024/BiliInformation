@@ -24,12 +24,13 @@
             android:name=".WeekRank"
             android:label="每周推荐" />
         <activity
-            android:name=".rank_info"
-            android:label="详细信息"></activity>
-        <activity
             android:name=".detiails_rank"
             android:label="@string/title_activity_detiails_rank"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".live_list"
+            android:label="精选直播"
+            ></activity>
     </application>
 
 </manifest>

@@ -11,73 +11,118 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.loopcom.ccoderad.biliinformation.MainActivity">
 
-    <android.support.v7.widget.CardView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="3sp"
-        android:backgroundTintMode="add"
-        android:padding="3sp"
-        android:id="@+id/card_1"
-        android:foreground="?attr/selectableItemBackground">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="2sp">
+            android:backgroundTintMode="add"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="3sp"
+            app:cardCornerRadius="3sp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/anime_info_pic" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/little_tv" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:text="@string/AnimeInfo"
+                    android:textColor="#cf6ab9"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_1"
+            android:layout_marginTop="8sp"
+            android:backgroundTintMode="add"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="15sp"
+            app:cardCornerRadius="3sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="88dp"
+                    android:padding="3sp"
+                    android:src="@mipmap/bilirank" />
+
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/anime_info_pic" />
-                <ImageView
-                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/little_tv"/>
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingLeft="30sp"
+                    android:text="@string/main_rank"
+                    android:textSize="30sp" />
+
             </LinearLayout>
+        </android.support.v7.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|center_horizontal"
-                android:text="@string/AnimeInfo"
-                android:textColor="#cf6ab9"
-                android:textSize="18sp" />
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="3sp"
-        android:padding="3sp"
-        android:backgroundTintMode="add"
-        android:id="@+id/card_2"
-        android:foreground="?attr/selectableItemBackground">
-        <LinearLayout
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/bilirank"
-                android:padding="3sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/main_rank"
-                android:layout_gravity="center_vertical"
-                android:gravity="center"
-                android:textSize="30sp"
-                android:paddingLeft="30sp"/>
+            android:layout_below="@id/card_2"
+            android:layout_marginTop="8sp"
+            android:foreground="?attr/selectableItemBackground">
 
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="25sp"
+                    android:text="直播信息                    "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="165dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="right"
+                    android:padding="3sp"
+                    android:src="@mipmap/live_logo" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
 
 </LinearLayout>

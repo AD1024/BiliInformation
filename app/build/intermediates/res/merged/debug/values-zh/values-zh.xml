@@ -4,6 +4,6 @@
     <string name="Info_First_Tips">选择年份和月份然后下拉页面即可</string>
     <string name="app_name">Bilibli信息中心</string>
     <string name="infoload">加载信息</string>
-    <string name="main_rank">周\n推\n荐</string>
+    <string name="main_rank">每周推荐</string>
     <string name="search_new_old">新旧番信息查询</string>
 </resources>

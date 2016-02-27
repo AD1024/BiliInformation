@@ -83,8 +83,8 @@
                     "startLine": 6,
                     "startColumn": 4,
                     "startOffset": 250,
-                    "endColumn": 45,
-                    "endOffset": 291
+                    "endColumn": 42,
+                    "endOffset": 288
                 },
                 "from": {
                     "file": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/values-zh/strings.xml",
@@ -92,8 +92,8 @@
                         "startLine": 7,
                         "startColumn": 4,
                         "startOffset": 301,
-                        "endColumn": 45,
-                        "endOffset": 342
+                        "endColumn": 42,
+                        "endOffset": 339
                     }
                 }
             },
@@ -101,9 +101,9 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 296,
+                    "startOffset": 293,
                     "endColumn": 50,
-                    "endOffset": 342
+                    "endOffset": 339
                 },
                 "from": {
                     "file": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/src/main/res/values-zh/strings.xml",

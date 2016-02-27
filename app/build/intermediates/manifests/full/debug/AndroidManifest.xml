@@ -30,12 +30,12 @@
             android:name="com.loopcom.ccoderad.biliinformation.WeekRank"
             android:label="每周推荐" />
         <activity
-            android:name="com.loopcom.ccoderad.biliinformation.rank_info"
-            android:label="详细信息" />
-        <activity
             android:name="com.loopcom.ccoderad.biliinformation.detiails_rank"
             android:label="@string/title_activity_detiails_rank"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.loopcom.ccoderad.biliinformation.live_list"
+            android:label="精选直播" />
     </application>
 
 </manifest>

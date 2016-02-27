@@ -1,27 +1,22 @@
 package com.loopcom.ccoderad.biliinformation;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
-import android.support.design.widget.Snackbar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.loopcom.ccoderad.biliinformation.utils.ProgressGenerator;
 
-import com.dd.processbutton.iml.GenerateProcessButton;
-import com.dd.processbutton.iml.ActionProcessButton;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -34,7 +29,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import com.loopcom.ccoderad.biliinformation.utils.ProgressGenerator;
+
 import jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout;
 
 public class AnimeInfo extends AppCompatActivity implements WaveSwipeRefreshLayout.OnRefreshListener, AdapterView.OnItemSelectedListener ,ProgressGenerator.OnCompleteListener{
@@ -52,6 +47,7 @@ public class AnimeInfo extends AppCompatActivity implements WaveSwipeRefreshLayo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fresco.initialize(this);
         setContentView(R.layout.anime_info);
         mYear = (Spinner) findViewById(R.id.yearspinner);
         mMonth= (Spinner) findViewById(R.id.monthspinner);
@@ -224,6 +220,22 @@ public class AnimeInfo extends AppCompatActivity implements WaveSwipeRefreshLayo
     @Override
     protected void onPause() {
         super.onPause();
+        if(loadTask!=null && loadTask.getStatus()== AsyncTask.Status.RUNNING){
+            loadTask.cancel(true);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(loadTask!=null && loadTask.getStatus()== AsyncTask.Status.RUNNING){
+            loadTask.cancel(true);
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
         if(loadTask!=null && loadTask.getStatus()== AsyncTask.Status.RUNNING){
             loadTask.cancel(true);
         }

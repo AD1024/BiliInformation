@@ -6,9 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
@@ -17,17 +16,13 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.JSONTokener;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -203,6 +198,9 @@ public class WeekRank extends AppCompatActivity implements WaveSwipeRefreshLayou
         ClipData clipData = ClipData.newPlainText("AVNum",rb.av);
         clipboardManager.setPrimaryClip(clipData);
         Toast.makeText(context, "AV号已复制", Toast.LENGTH_SHORT).show();
+//        String url = "http://www.bilibli.com/mobile/video/av"+rb.av+".html";
+//        Uri uri = Uri.parse(url);
+//        startActivity(new Intent(Intent.ACTION_VIEW,uri));
         return false;
     }
 
@@ -253,6 +251,14 @@ public class WeekRank extends AppCompatActivity implements WaveSwipeRefreshLayou
     @Override
     protected void onPause() {
         super.onPause();
+        if(rankTask!=null && rankTask.getStatus()== AsyncTask.Status.RUNNING){
+            rankTask.cancel(true);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
         if(rankTask!=null && rankTask.getStatus()== AsyncTask.Status.RUNNING){
             rankTask.cancel(true);
         }

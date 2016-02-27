@@ -12,12 +12,12 @@
         "source": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
-    },
-    {
         "merged": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/res/merged/debug/drawable/rect_normal.xml",
         "source": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/exploded-aar/com.github.dmytrodanylyk.android-process-button/library/1.0.4/res/drawable/rect_normal.xml"
+    },
+    {
+        "merged": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
         "merged": "/Users/CCoderAD/AndroidStudioProjects/BiliInformation/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
