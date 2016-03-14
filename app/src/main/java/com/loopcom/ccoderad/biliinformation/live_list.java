@@ -13,6 +13,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.loopcom.ccoderad.biliinformation.Adapters.LiveAdapter;
+import com.loopcom.ccoderad.biliinformation.Beans.LiveBean;
 
 import org.json.JSONException;
 

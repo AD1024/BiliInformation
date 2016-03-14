@@ -1,4 +1,4 @@
-package com.loopcom.ccoderad.biliinformation;
+package com.loopcom.ccoderad.biliinformation.Adapters;
 
 import android.content.Context;
 import android.net.Uri;
@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.loopcom.ccoderad.biliinformation.Beans.AnimeBean;
+import com.loopcom.ccoderad.biliinformation.R;
 
 import java.util.List;
 

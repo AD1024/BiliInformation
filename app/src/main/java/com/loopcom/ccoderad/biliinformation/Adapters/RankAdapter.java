@@ -1,8 +1,6 @@
-package com.loopcom.ccoderad.biliinformation;
+package com.loopcom.ccoderad.biliinformation.Adapters;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,10 +8,11 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.loopcom.ccoderad.biliinformation.utils.InfoImageLoader;
+import com.loopcom.ccoderad.biliinformation.R;
+import com.loopcom.ccoderad.biliinformation.Beans.RankBean;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -68,7 +67,6 @@ public class RankAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder vh =null;
         if(convertView==null){
-            //上一次完成的地方:下一次:Rankitem布局，详细页面
             vh = new ViewHolder();
             convertView = mInflater.inflate(R.layout.rank_itrm,null);
             vh.av= (TextView) convertView.findViewById(R.id.rank_av_num);

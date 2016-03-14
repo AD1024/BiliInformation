@@ -16,7 +16,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.loopcom.ccoderad.biliinformation.Beans.RankBean;
+import com.loopcom.ccoderad.biliinformation.utils.InfoImageLoader;
 
 import java.util.Random;
 
@@ -56,6 +58,7 @@ public class detiails_rank extends AppCompatActivity implements View.OnLongClick
         final RankBean result = (RankBean) i.getSerializableExtra("Data");
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setBackgroundColor(Color.rgb(mR-45,G-45,B-45));
+        fab.setOnLongClickListener(this);
         clipboardManager = (ClipboardManager) detiails_rank.this.getSystemService(detiails_rank.this.CLIPBOARD_SERVICE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,9 +104,7 @@ public class detiails_rank extends AppCompatActivity implements View.OnLongClick
 
     @Override
     public boolean onLongClick(View v) {
-        clipData =ClipData.newPlainText("Description",description.getText());
-        clipboardManager.setPrimaryClip(clipData);
-        Toast.makeText(this,"内容已复制",Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this,about_me.class));
         return false;
     }
 

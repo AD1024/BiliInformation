@@ -1,4 +1,4 @@
-package com.loopcom.ccoderad.biliinformation;
+package com.loopcom.ccoderad.biliinformation.Beans;
 
 /**
  * Created by CCoderAD on 16/2/26.

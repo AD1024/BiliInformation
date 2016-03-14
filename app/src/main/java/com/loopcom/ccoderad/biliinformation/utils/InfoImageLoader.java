@@ -1,4 +1,4 @@
-package com.loopcom.ccoderad.biliinformation;
+package com.loopcom.ccoderad.biliinformation.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -79,7 +79,7 @@ public class InfoImageLoader {
            try {
                url = new URL(params[0]);
                is = url.openStream();
-               BufferedInputStream bis = new BufferedInputStream(is);
+//               BufferedInputStream bis = new BufferedInputStream(is);
                bitmap=BitmapFactory.decodeStream(is);
                is.close();
                if(bitmap!=null){

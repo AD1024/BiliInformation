@@ -16,6 +16,9 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.loopcom.ccoderad.biliinformation.Adapters.RankAdapter;
+import com.loopcom.ccoderad.biliinformation.Beans.RankBean;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -135,14 +138,17 @@ public class WeekRank extends AppCompatActivity implements WaveSwipeRefreshLayou
             RankBean bean = new RankBean();
             String jsonString = getJson(new URL(Url).openStream());
             JSONObject jsonObject = new JSONObject(jsonString);
-//            JSONArray jsonArray = jsonObject.getJSONArray("type1");
-//            JSONArray jsonArray1 = jsonObject.getJSONArray("type3");
-//            JSONArray jsonArray2 = jsonObject.getJSONArray("type4");
-//            JSONArray jsonArray3 = jsonObject.getJSONArray("type5");
-//            JSONArray jsonArray4 = jsonObject.getJSONArray("type11");
-//            JSONArray jsonArray5 = jsonObject.getJSONArray("type13");
-//            JSONArray jsonArray6 = jsonObject.getJSONArray("type36");
-//            JSONArray[] arrays = new JSONArray[]{jsonArray,jsonArray1,jsonArray2,jsonArray3,jsonArray4,jsonArray5,jsonArray6};
+            /*
+            Algorithm Falut
+            JSONArray jsonArray = jsonObject.getJSONArray("type1");
+            JSONArray jsonArray1 = jsonObject.getJSONArray("type3");
+            JSONArray jsonArray2 = jsonObject.getJSONArray("type4");
+            JSONArray jsonArray3 = jsonObject.getJSONArray("type5");
+            JSONArray jsonArray4 = jsonObject.getJSONArray("type11");
+            JSONArray jsonArray5 = jsonObject.getJSONArray("type13");
+            JSONArray jsonArray6 = jsonObject.getJSONArray("type36");
+            JSONArray[] arrays = new JSONArray[]{jsonArray,jsonArray1,jsonArray2,jsonArray3,jsonArray4,jsonArray5,jsonArray6};
+            */
             String[] tags = new String[]{"type1", "type3", "type4", "type5", "type11", "type13", "type36"};
             List<JSONObject> jsonObjects = new ArrayList<>();
             for (int i = 0; i < 7; i++) {

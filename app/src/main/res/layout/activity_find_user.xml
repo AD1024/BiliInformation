@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.loopcom.ccoderad.biliinformation.FindUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="输入昵称或ID来爆菊" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/search_up_face"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            app:fadeDuration="300"
+            app:failureImage="@drawable/live_indicator_logo"
+            app:placeholderImage="@drawable/live_indicator_logo"
+            app:roundAsCircle="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_search_up_name_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/btnSearchAttention"
+                android:text="昵称:" />
+
+            <TextView
+                android:id="@+id/tv_search_up_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_search_up_name_indicator"
+                android:layout_toEndOf="@+id/tv_search_up_name_indicator"
+                android:text="这里是名字哟！" />
+
+            <TextView
+                android:id="@+id/search_up_sex_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tv_search_up_name_indicator"
+                android:layout_below="@+id/tv_search_up_name_indicator"
+                android:text="性别:" />
+
+            <TextView
+                android:id="@+id/search_up_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tv_search_up_name"
+                android:layout_below="@+id/tv_search_up_name"
+                android:text="嘿嘿嘿" />
+
+            <TextView
+                android:id="@+id/search_up_id_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_sex_indicator"
+                android:layout_below="@+id/search_up_sex_indicator"
+                android:text="会员ID:" />
+
+            <TextView
+                android:id="@+id/search_up_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_up_sex"
+                android:layout_toEndOf="@+id/search_up_id_indicator"
+                android:text="这里是UP的ID~" />
+
+            <TextView
+                android:id="@+id/search_up_vertification_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_id_indicator"
+                android:layout_below="@+id/search_up_id_indicator"
+                android:text="认证信息:" />
+
+            <TextView
+                android:id="@+id/search_up_vertification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/search_up_vertification_indicator"
+                android:layout_toEndOf="@+id/search_up_vertification_indicator"
+                android:text="这是认证信息~" />
+
+            <TextView
+                android:id="@+id/search_up_fans_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_vertification_indicator"
+                android:layout_below="@+id/search_up_vertification_indicator"
+                android:text="粉丝数:" />
+
+            <TextView
+                android:id="@+id/search_up_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_up_vertification_indicator"
+                android:layout_toEndOf="@+id/search_up_fans_indicator"
+                android:text="粉丝多不多呢?" />
+
+            <TextView
+                android:id="@+id/searh_up_follow_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_fans_indicator"
+                android:layout_below="@+id/search_up_fans_indicator"
+                android:text="关注数:" />
+
+            <TextView
+                android:id="@+id/search_up_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_fans"
+                android:layout_alignTop="@+id/searh_up_follow_indicator"
+                android:text="N/A" />
+
+            <TextView
+                android:id="@+id/search_up_article_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/searh_up_follow_indicator"
+                android:layout_below="@+id/searh_up_follow_indicator"
+                android:text="投稿数:" />
+
+            <TextView
+                android:id="@+id/search_up_artical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_follow"
+                android:layout_below="@+id/search_up_follow"
+                android:text="N/A" />
+
+            <Button
+                android:id="@+id/btnSearchAttention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="爆他关注者的菊花！" />
+
+            <TextView
+                android:id="@+id/search_up_place_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_article_indicator"
+                android:layout_below="@+id/search_up_article_indicator"
+                android:text="居住地:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/search_up_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_artical"
+                android:layout_alignTop="@+id/search_up_place_indicator"
+                android:text="TA在哪里!赶紧去爆菊!" />
+
+            <TextView
+                android:id="@+id/search_up_birth_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_place_indicator"
+                android:layout_below="@+id/search_up_place_indicator"
+                android:text="生日:" />
+
+            <TextView
+                android:id="@+id/search_up_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_sex"
+                android:layout_below="@+id/search_up_place_indicator"
+                android:text="YYYY-MM-DD" />
+
+            <TextView
+                android:id="@+id/search_up_description_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/search_up_birth"
+                android:layout_centerVertical="true"
+                android:text="个人简介" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/search_up_description_indicator"
+                android:fillViewport="false"
+                android:layout_above="@+id/btnSearchAttention">
+
+                <TextView
+                    android:id="@+id/search_up_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:text="Hahaha" />
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

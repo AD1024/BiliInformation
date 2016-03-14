@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.loopcom.ccoderad.biliinformation.about_me"
+    android:weightSum="1">
+        <RelativeLayout
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:padding="6sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                fresco:placeholderImage="@drawable/live_indicator_logo"
+                fresco:roundAsCircle="true"
+                fresco:fadeDuration="300"
+                android:id="@+id/my_avatar"
+                android:layout_marginBottom="37dp"
+                android:layout_above="@+id/text_my_name"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="NameHere"
+                android:id="@+id/text_my_name"
+                android:paddingLeft="4sp"
+                android:layout_marginBottom="46dp"
+                android:layout_above="@+id/text_my_info"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="DescriptionHere"
+                android:id="@+id/text_my_info"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+</LinearLayout>

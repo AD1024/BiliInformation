@@ -15,6 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.loopcom.ccoderad.biliinformation.Adapters.InfoAdapter;
+import com.loopcom.ccoderad.biliinformation.Beans.AnimeBean;
 import com.loopcom.ccoderad.biliinformation.utils.ProgressGenerator;
 
 import org.json.JSONArray;
@@ -43,7 +45,7 @@ public class AnimeInfo extends AppCompatActivity implements WaveSwipeRefreshLayo
 //    private ActionProcessButton mBtnGet;
     private TextView tvInfoErr;
     private LoadTask loadTask;
-    private ProgressGenerator progressGenerator;
+//    private ProgressGenerator progressGenerator;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +64,7 @@ public class AnimeInfo extends AppCompatActivity implements WaveSwipeRefreshLayo
         mRL.setOnRefreshListener(this);
         mYear.setOnItemSelectedListener(this);
         mMonth.setOnItemSelectedListener(this);
-        progressGenerator = new ProgressGenerator(this);
+//        progressGenerator = new ProgressGenerator(this);
         LayoutInflater inflater = LayoutInflater.from(this);
         Toast.makeText(this, "请选择年份月份", Toast.LENGTH_LONG).show();
     }

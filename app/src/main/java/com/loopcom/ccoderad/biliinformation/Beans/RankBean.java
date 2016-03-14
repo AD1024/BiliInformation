@@ -1,4 +1,4 @@
-package com.loopcom.ccoderad.biliinformation;
+package com.loopcom.ccoderad.biliinformation.Beans;
 
 import android.widget.ImageView;
 

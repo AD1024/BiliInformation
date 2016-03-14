@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/live_indicator_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -29,8 +29,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".live_list"
-            android:label="精选直播"
-            ></activity>
+            android:label="精选直播" />
+        <activity android:name=".about_me" />
+        <activity android:name=".FindUser" />
+        <activity android:name=".AnimeIndex" android:label="番剧索引"></activity>
     </application>
 
 </manifest>

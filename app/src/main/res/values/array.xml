@@ -2,17 +2,17 @@
 <resources>
     <string-array name="Month">
         <item>1月</item>
-        <item>2月</item>
-        <item>3月</item>
+        <!--<item>2月</item>-->
+        <!--<item>3月</item>-->
         <item>4月</item>
-        <item>5月</item>
-        <item>6月</item>
+        <!--<item>5月</item>-->
+        <!--<item>6月</item>-->
         <item>7月</item>
-        <item>8月</item>
-        <item>9月</item>
+        <!--<item>8月</item>-->
+        <!--<item>9月</item>-->
         <item>10月</item>
-        <item>11月</item>
-        <item>12月</item>
+        <!--<item>11月</item>-->
+        <!--<item>12月</item>-->
     </string-array>
     <string-array name="Year">
         <item>2016年</item>
@@ -23,7 +23,6 @@
         <item>2011年</item>
         <item>2010年</item>
         <item>2009年</item>
-        <item>2008年</item>
     </string-array>
     <string-array name="live_catrgory">
         <item>全部</item>
@@ -39,5 +38,10 @@
     <string-array name="live_order">
         <item>最火直播</item>
         <item>最新开播</item>
+    </string-array>
+    <string-array name="anime_index_sort_types">
+        <item>更新排序</item>
+        <item>订阅排序</item>
+        <item>开播排序(怀旧)</item>
     </string-array>
 </resources>
