@@ -18,6 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,6 +45,7 @@ import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 
 public class AnimeIndex extends AppCompatActivity implements AdapterView.OnItemSelectedListener, XRecyclerView.LoadingListener, View.OnLongClickListener, MyOnLongClickListener, MyOnClickListener{
 
@@ -141,7 +143,9 @@ public class AnimeIndex extends AppCompatActivity implements AdapterView.OnItemS
     AnimeIndexFetcher mFetcher;
     private List<AnimeIndexBean> mData;
     String count;
+    private int tot=0;
     AnimeIndexAdapter animeIndexAdapter;
+    private Button btnRand;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -158,6 +162,15 @@ public class AnimeIndex extends AppCompatActivity implements AdapterView.OnItemS
         animeIndexAdapter=new AnimeIndexAdapter(this,mData);
         animeIndexAdapter.setOnItemLongCLickListener(this);
         animeIndexAdapter.setOnItemClickListener(this);
+        btnRand = (Button) findViewById(R.id.anime_index_rand);
+        btnRand.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random random = new Random(System.currentTimeMillis());
+                int pos = random.nextInt(tot);
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse(mData.get(pos-2).animeUrl)));
+            }
+        });
         mListView.addHeaderView(ListHeader);
         mListView.setPullRefreshEnabled(true);
         mListView.setLoadingMoreEnabled(true);
@@ -225,11 +238,13 @@ public class AnimeIndex extends AppCompatActivity implements AdapterView.OnItemS
             mFetcher = new AnimeIndexFetcher();
             mFetcher.execute(requestUrl);
         }
+        tot+=40;
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         mData.clear();
+        tot=0;
        StartFetch(-1);
     }
 

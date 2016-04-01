@@ -9,11 +9,27 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.loopcom.ccoderad.biliinformation.AnimeIndex">
+    <Button
+        android:id="@+id/anime_index_rand"
+
+        android:text="手气不错"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="180sp"
+        android:layout_height="35dp"
+        android:background="@drawable/anime_index_button_shape"
+        android:shadowColor="#EA96FF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
 
     <com.jcodecraeer.xrecyclerview.XRecyclerView
         android:id="@+id/anime_index_rv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingTop="45sp">
 
     </com.jcodecraeer.xrecyclerview.XRecyclerView>
 
